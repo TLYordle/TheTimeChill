@@ -3,34 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/warp.css">
-    <title>The Time Chill</title>
+    <link rel="stylesheet" href="css/div.css">
+    <title>Home</title>
 </head>
 <body>
     <div class="parent">
-        <div class="div1">
-            <a href="index.php?page=listnv">Danh sách nhân viên</a>
+        <div class = "div1">
+            <h3>Nội Dung Bài 1 - 5</h3>
+            <a href="index.php?page=bai1">Bài 1</a>
+            <br>
+            <a href="index.php?page=bai2">Bài 2</a>
+            <br>
+            <a href="index.php?page=bai3">Bài 3</a>
+            <br>
+            <a href="index.php?page=bai4">Bài 4</a>
+            <br>
+            <a href="index.php?page=bai5">Bài 5</a>
+            <br>
+            <h3>Nội Dung Bài 6</h3>
+            <a href="index.php?page=listsv">Danh sách sinh viên</a>
         </div>
-        <div class="div2">
-            <h1>THE TIME CHILL</h1>
-        </div>
-        <div class="div3">3</div>
-        <div class="div4">
+        <div class = "div2">
             <?php
-                if (isset($_GET['page'])) {
-                    $page = $_GET['page'];
-
-                    if ($page == 'listnv') {
-                        echo '<div class="div4">';
-                        include 'listnv.php';
-                        echo '</div>';
-                    } else {
-                        echo "<h2>Trang không tồn tại.</h2>";
+                if(isset($_GET["page"])){
+                    $page = $_GET["page"];
+                    if($page == 'bai1'){
+                        echo "<h1>Bài 1</h1>";
                     }
-                } else {
-                    echo "<h1>Chào mừng đến với trang web của tôi!</h1>";
+                    else if($page == 'bai2'){
+                        echo "<h1>Bài 2</h1>";
+                    }
+                    else if($page == 'bai3'){
+                        echo "<h1>Bài 3</h1>";
+                    }
+                    else if($page == 'bai4'){
+                        echo "<h1>Bài 4</h1>";
+                    }
+                    else if($page == 'bai5'){
+                        echo "<h1>Bài 5</h1>";
+                    }
+                    else if($page == 'listsv'){
+                        echo "<h1>Bài 6</h1>";
+                    }
+                    else if($page == 'insertsv'){
+                        echo "<h1>Bài 6</h1>";
+                    }
                 }
             ?>
+        </div>
+        <div class = "div3">
+            <?php
+                if(isset($_GET["page"])){
+                    $page = $_GET["page"];
+                    if($page == 'bai1'){
+                        include('bai1.php');
+                    }
+                    else if($page == 'bai2'){
+                        include('bai2.php');
+                    }
+                    else if($page == 'bai3'){
+                        include('bai3.php');
+                    }
+                    else if($page == 'bai4'){
+                        include('bai4.php');
+                    }
+                    else if($page == 'bai5'){
+                        include('bai5.php');
+                    }
+                    else if($page == 'listsv'){
+                        include('listsv.php');
+                    }
+                    else if($page == 'insertsv'){
+                        include('insertsv.php');
+                    }
+                }
+            ?>  
         </div>
     </div>
 </body>

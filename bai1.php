@@ -10,8 +10,9 @@
     <div class = 'bai1'>
     <form action="" method="POST">
         <label for="">Nhập 1 mảng</label>
-        <input type="textbox" name="mang" id="mang"><br>
-        <label for="">⚠ Các phần tử phải cách nhau 1 dấu ;</label>
+        <input type="textbox" name="mang" id="mang" placeholder="Mời nhập 1 mảng"><br>
+        <br>
+        <label for="">⚠ Các phần tử phải cách nhau 1 dấu ';'</label>
         <br><br>
         <input type="submit" value = "Hiển Thị">
     </form>

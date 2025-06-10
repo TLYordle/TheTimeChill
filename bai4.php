@@ -8,8 +8,9 @@
 <body>
     <form action="" method="POST">
         <label for="">Nhập 1 mảng</label>
-        <input type="textbox" name="mang" id="mang" placeholder="Mời nhập mảng" is_numeric><br><br>
-        <label for="">⚠ Các phần tử phải cách nhau 1 dấu ';' .</label><br>
+        <input type="textbox" name="mang" id="mang" placeholder="Mời nhập 1 mảng"><br>
+        <br>
+        <label for="">⚠ Các phần tử phải cách nhau 1 dấu ';'</label>
         <label for="">⚠ Các phần tử phải là 1 số nguyên. </label>
         <br><br>
         <input type="submit" value = "Hiển Thị">
